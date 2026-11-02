@@ -93,3 +93,7 @@ Lessons that save credits next time:
 - When a product keeps drifting (the trash enclosure), generate the hero still first with Nano Banana from a product‑only reference, then animate with Frames mode. The end frame then matches the reference exactly.
 - Kling 4.0, 16:9, 1080p, 10 s = 32.5 credits per clip; Nano Banana 2K edits ≈ 2 credits.
 - Clips are 1924×1076 @ 24 fps, ~27–33 MB each. `tools/ingest_clip.py` turns each one into the frame sequence the site scrubs.
+
+## Round 2 (tree fix) — same day
+
+The front-lawn tree stood on the walkway in plate v1 (and in the source drone shot). Plate v3 = Nano Banana edit of plate v1 moving the tree ~2 m into the lawn, nothing else changed. All five clips were then re-generated in Kling 4.0 **Frames** mode: start = plate v3, end = the approved hero still for that chapter (shed / deck box / hose = last frame of the round-1 clip, exported from the browser; garage / trash = the Nano Banana hero stills). Result: identical hero shots, corrected aerial and approach paths. 5 × 32.5 credits + 2.
