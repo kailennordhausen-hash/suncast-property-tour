@@ -97,3 +97,9 @@ Lessons that save credits next time:
 ## Round 2 (tree fix) — same day
 
 The front-lawn tree stood on the walkway in plate v1 (and in the source drone shot). Plate v3 = Nano Banana edit of plate v1 moving the tree ~2 m into the lawn, nothing else changed. All five clips were then re-generated in Kling 4.0 **Frames** mode: start = plate v3, end = the approved hero still for that chapter (shed / deck box / hose = last frame of the round-1 clip, exported from the browser; garage / trash = the Nano Banana hero stills). Result: identical hero shots, corrected aerial and approach paths. 5 × 32.5 credits + 2.
+
+## Round 3 — product consistency in chapters 02 and 03
+
+- 02 Deck box: the round‑1 hero showed a tall two‑door cabinet beside the deck box. Nano Banana edit (hero frame + trash still as references) replaced it with the single‑door Trash Stow‑Away; clip re‑rolled in Frames mode from plate v3 to the corrected still.
+- 03 Hosemobile: the background box behind the cart was a plain unit, and the cart rotated during the approach. Nano Banana edit (hero frame + deck box crop) put the real diagonal‑slat deck box behind the cart; clip re‑rolled with the prompt locking the cart as a rigid, parked object (no rotation, reel does not spin).
+- Rule of thumb: any secondary product visible in a hero must be fixed in the still before animating — Kling will not keep two products consistent on its own.

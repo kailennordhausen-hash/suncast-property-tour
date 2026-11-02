@@ -190,6 +190,18 @@ a { color: inherit; }
 
 .missing { position: absolute; right: calc(var(--gutter) + 64px); top: calc(var(--topper-h) + var(--nav-h) + 12px); max-width: 320px; margin: 0; font-size: 12px; padding: 10px 12px; border-radius: 8px; background: rgba(0,28,53,.7); border: 1px solid rgba(255,255,255,.25); }
 
+/* skip to main site — quiet pill, bottom right of the pinned scene */
+.skip-site {
+  position: absolute; right: var(--gutter); bottom: 28px; z-index: 7;
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px 8px 14px;
+  border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(0,28,53,.28); backdrop-filter: blur(6px);
+  font-family: var(--font-nav); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: #fff;
+  opacity: .55; transition: opacity .25s, background .25s, border-color .25s;
+}
+.skip-site:hover, .skip-site:focus-visible { opacity: 1; background: rgba(0,28,53,.5); border-color: rgba(255,255,255,.6); }
+.skip-site__arrow { width: 7px; height: 7px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); transition: transform .2s; }
+.skip-site:hover .skip-site__arrow { transform: translateX(2px) rotate(45deg); }
+
 /* progress rail */
 .rail { position: absolute; right: var(--gutter); top: 50%; transform: translateY(-50%); z-index: 6; display: flex; align-items: center; gap: 14px; }
 .rail ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
@@ -266,6 +278,7 @@ a { color: inherit; }
   .stage[data-side="right"]::after { background: linear-gradient(to top, rgba(0,28,53,.6) 0%, rgba(0,28,53,0) 55%); }
   .overlay__details { display: none; }
   .overlay__benefit { font-size: 14px; margin-bottom: 12px; }
+  .skip-site { right: 12px; bottom: 74px; padding: 7px 10px 7px 12px; font-size: 10px; }
   .rail { right: auto; left: 50%; top: auto; bottom: 22px; transform: translateX(-50%); flex-direction: column-reverse; gap: 10px; }
   .rail ol { display: flex; gap: 10px; }
   .rail button { width: 32px; height: 32px; font-size: 11px; }
