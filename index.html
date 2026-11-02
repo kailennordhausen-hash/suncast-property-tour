@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suncast — The Property Tour</title>
+<meta name="description" content="A scroll-driven tour of a home outfitted with five Suncast products: Vista 7x7 shed, 134-gallon deck box, Hosemobile hose reel cart, Diamond Door garage cabinets and the Single Trash Stow-Away.">
+<!-- Brand type via Adobe Fonts kit cht5ivq: scandia-web (headlines) + ff-din-paneuropean (navigation).
+     Outfit / Barlow / Inter remain as fallbacks if the kit is unreachable. -->
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/cht5ivq.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Barlow:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="assets/poster.jpg">
+</head>
+<body data-motion="auto">
+<a class="skip" href="#closing">Skip the tour — go to the product summary</a>
+
+<header class="top" role="banner">
+  <div class="topper" aria-label="Utility">
+    <a href="#" class="topper__item">Our Company <span class="chev" aria-hidden="true"></span></a>
+    <a href="#" class="topper__item">Customer Service <span class="chev" aria-hidden="true"></span></a>
+    <a href="#" class="topper__item"><span class="flag" aria-hidden="true"></span>USA <span class="chev" aria-hidden="true"></span></a>
+    <a href="#" class="topper__item"><span class="dim">LNG</span> English <span class="chev" aria-hidden="true"></span></a>
+    <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">
+      <span class="motion-toggle__dot" aria-hidden="true"></span>
+      <span class="motion-toggle__label">Reduce motion</span>
+    </button>
+  </div>
+  <div class="navbar">
+    <a class="logo" href="#top" aria-label="Suncast, back to the start">
+      <img src="assets/brand/suncast-logo.svg" alt="" onerror="this.remove()">
+      <span class="wordmark">suncast<span aria-hidden="true">®</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="#" aria-current="page">Home &amp; Garden</a>
+      <a href="#">Outdoor Storage</a>
+      <a href="#">Home Storage</a>
+      <a href="#">Snow Tools</a>
+      <a href="#">Inspiration &amp; Advice</a>
+    </nav>
+    <div class="nav-icons" aria-hidden="true">
+      <span class="ico ico--search"></span><span class="ico ico--user"></span><span class="ico ico--cart"></span>
+    </div>
+    <nav class="top-nav" aria-label="Chapters">
+      <ol id="top-nav-list"></ol>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Loading state ===== -->
+<div class="loader" id="loader" role="status" aria-live="polite">
+  <div class="loader__inner">
+    <p class="loader__title">Preparing the tour</p>
+    <div class="loader__bar"><span id="loader-fill"></span></div>
+    <p class="loader__meta" id="loader-meta">Loading frames…</p>
+  </div>
+</div>
+
+<!-- ===== Pinned scroll scene ===== -->
+<main id="top">
+<section class="scroller" id="scroller" aria-label="Scroll-controlled property tour">
+  <div class="stage" id="stage">
+    <canvas id="film" aria-hidden="true"></canvas>
+    <img id="poster" class="poster" src="assets/poster.jpg" alt="Aerial view of a white modern farmhouse with a pool, patio, side path, open garage and a storage shed in the back corner of the lawn.">
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- Opening invitation -->
+    <div class="blur" id="blur" aria-hidden="true"></div>
+    <div class="intro" id="intro">
+      <h1 class="intro__title">Storage solutions for every space you call home.</h1>
+      <p class="intro__sub">Scroll to leave the aerial and visit five Suncast products where they live — the shed at the end of the path, the deck box by the pool, the reel beside the house, the cabinets in the garage and the bin enclosure on the patio.</p>
+      <button class="intro__cta" id="intro-cta" type="button">Explore our products <span class="arrow" aria-hidden="true"></span></button>
+      <div class="intro__cue" aria-hidden="true"><span class="intro__cue-line"></span><span>Scroll</span></div>
+    </div>
+
+    <!-- Chapter overlay (filled by JS, driven by scroll position) -->
+    <div class="overlay" id="overlay" aria-live="polite">
+      <p class="overlay__kicker"><span class="overlay__num" id="ov-num">01</span><span id="ov-kicker">Backyard</span></p>
+      <h2 class="overlay__name" id="ov-name"></h2>
+      <p class="overlay__model" id="ov-model"></p>
+      <p class="overlay__benefit" id="ov-benefit"></p>
+      <ul class="overlay__details" id="ov-details"></ul>
+      <button class="overlay__cta" id="ov-cta" type="button">Product details</button>
+    </div>
+
+    <!-- Hotspot that follows the product -->
+    <button class="hotspot" id="hotspot" type="button" aria-haspopup="dialog" aria-controls="panel" hidden>
+      <span class="hotspot__ring" aria-hidden="true"></span>
+      <span class="hotspot__dot" aria-hidden="true"></span>
+      <span class="hotspot__label" id="hotspot-label">Product</span>
+    </button>
+
+    <!-- Footage pending badge for chapters with no frames -->
+    <p class="missing" id="missing" hidden>Footage for this chapter has not been generated yet — showing the reference viewpoint.</p>
+
+    <!-- Progress rail -->
+    <nav class="rail" aria-label="Tour progress">
+      <ol id="rail-list"></ol>
+      <div class="rail__track" aria-hidden="true"><span id="rail-fill"></span></div>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== Reduced-motion / static alternative ===== -->
+<section class="static" id="static" aria-label="Property tour, static version" hidden>
+  <header class="static__intro">
+    <p class="intro__kicker">Five products. One property.</p>
+    <h1 class="intro__title">Storage solutions for every space you call home.</h1>
+    <img src="assets/poster.jpg" alt="Aerial view of the property: the shed sits at the back-right corner of the lawn, the deck box and trash enclosure on the patio against the house, the hose reel cart at the end of the side path, and the cabinets inside the open garage." class="static__poster">
+  </header>
+  <div id="static-chapters"></div>
+</section>
+
+<!-- ===== Closing: all five products ===== -->
+<section class="closing" id="closing" aria-labelledby="closing-title">
+  <div class="closing__head">
+    <p class="intro__kicker">The full set</p>
+    <h2 id="closing-title">Five places. Five Suncast products.</h2>
+    <p class="closing__sub">Everything in the tour, verified against the product documentation.</p>
+  </div>
+  <ul class="cards" id="cards"></ul>
+  <div class="closing__actions">
+    <a class="btn btn--ghost" href="#top">Back to the aerial</a>
+  </div>
+  <footer class="foot">
+    <p>Suncast® is a registered trademark of Suncast Corporation. Specifications shown are taken from the product pages linked in each panel. Lock not included where noted.</p>
+  </footer>
+</section>
+</main>
+
+<!-- ===== Product panel ===== -->
+<dialog class="panel" id="panel" aria-labelledby="panel-title">
+  <form method="dialog" class="panel__close-form">
+    <button class="panel__close" type="submit" aria-label="Close product details">×</button>
+  </form>
+  <p class="overlay__kicker"><span class="overlay__num" id="panel-num">01</span><span id="panel-kicker"></span></p>
+  <h2 class="panel__title" id="panel-title"></h2>
+  <p class="panel__model" id="panel-model"></p>
+  <img class="panel__img" id="panel-img" alt="">
+  <h3 class="panel__h">Verified features</h3>
+  <ul class="panel__features" id="panel-features"></ul>
+  <div class="panel__links" id="panel-links"></div>
+</dialog>
+
+<script src="assets/chapters/manifest.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

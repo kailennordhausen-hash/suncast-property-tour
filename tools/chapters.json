@@ -1,0 +1,124 @@
+{
+  "version": "2026-11-02",
+  "chapters": [
+    {
+      "id": "01-shed",
+      "index": 1,
+      "footage": "placeholder",
+      "kicker": "Backyard",
+      "name": "Vista® 7 ft. x 7 ft. Storage Shed",
+      "model": "BMS7705",
+      "benefit": "327 cubic feet of all-weather storage at the end of the garden path.",
+      "features": [
+        "Multi-wall resin panels engineered for strength and durability",
+        "All-weather construction with water resistance and UV protection",
+        "Metal-reinforced, shingle-style roof panels",
+        "Reinforced resin floor that withstands heavier loads",
+        "Double doors with large windows; upper and lower metal latches, pad-lockable (lock not included)",
+        "Exterior 7 ft. 4 in. W × 7 ft. 1.25 in. D × 8 ft. 2 in. H; door opening 60 in. W × 76 in. H",
+        "Colonnade walls, Pavestone doors, Black roof · 10 Year Limited Warranty · Made in USA"
+      ],
+      "link": "https://suncast.com/vista-storage-shed-bms7705.html",
+      "linkLabel": "View on suncast.com",
+      "focus": [55, 50],
+      "track": "auto",
+      "hotspotLabel": "Arched double doors with windows"
+    },
+    {
+      "id": "02-deckbox",
+      "index": 2,
+      "footage": "placeholder",
+      "kicker": "Patio",
+      "name": "134 Gallon Extra Large Deck Box",
+      "model": "BMDB1341P",
+      "benefit": "Cushions, pool toys and garden supplies, hidden in plain sight beside the house.",
+      "features": [
+        "134 gallon capacity — suited for cushions, garden supplies and firewood",
+        "Gas shocks make the lid easy to lift and hold it open",
+        "Reinforced lid doubles as seating; 300 lb. lid weight capacity",
+        "Decorative wood-look diagonal slat pattern",
+        "Pad-lockable for security (lock not included)",
+        "Exterior 49.25 in. W × 29.75 in. D × 28 in. H",
+        "Peppercorn · 10 Year Limited Warranty · Made in USA"
+      ],
+      "link": "https://suncast.com/134-gallon-extra-large-deck-box-bmdb1341p.html",
+      "linkLabel": "View on suncast.com",
+      "focus": [50, 55],
+      "track": "auto",
+      "hotspotLabel": "Gas-shock lid, 300 lb seat"
+    },
+    {
+      "id": "03-hosemobile",
+      "index": 3,
+      "footage": "placeholder",
+      "kicker": "Beside the house",
+      "name": "Hosemobile® Hose Reel Cart with Bin",
+      "model": "CPLSFB200CG",
+      "benefit": "225 feet of hose, an accessory bin and two big wheels — the garden goes where you do.",
+      "features": [
+        "Holds up to 225 ft. of 5/8 in. vinyl hose",
+        "Durable, low-maintenance resin construction",
+        "Mountable storage bin for nozzles, gloves and small watering accessories",
+        "Large wheels and a fold-down handle for mobility and compact storage"
+      ],
+      "link": "https://www.lowes.com/pd/Suncast-225-FT-Gray-Hose-Cart-with-Bin/5017306851",
+      "linkLabel": "View product listing",
+      "focus": [50, 55],
+      "track": "auto",
+      "hotspotLabel": "Spoked reel and crank handle"
+    },
+    {
+      "id": "04-garage",
+      "index": 4,
+      "footage": "placeholder",
+      "kicker": "Inside the garage",
+      "name": "Diamond Door Garage Cabinet System",
+      "model": "BMC7210 · BMC3010 · BMC3611 · BMC3610 · BMC5810",
+      "benefit": "Seven modular resin cabinets that turn the garage wall into a workshop.",
+      "features": [
+        "2× Tall Storage Cabinet BMC7210 — 30 in. W × 20 in. D × 72 in. H, three adjustable metal-reinforced shelves, 75 lb. per shelf",
+        "2× Wall Storage Cabinet BMC3010 — 30 in. W × 12 in. D × 30.25 in. H, one shelf, 50 lb.",
+        "Single Drawer Base Cabinet BMC3611 — 30 in. W × 20 in. D × 36 in. H, ball-bearing drawer slides hold up to 30 lb.",
+        "Base Storage Cabinet BMC3610 — 30 in. W × 20.25 in. D × 36 in. H, two reinforced shelves, 75 lb. each",
+        "Tall Storage Locker BMC5810 — 15 in. W × 20 in. D × 72 in. H, vented, hanging rod and coat hook",
+        "Resin resists denting, rusting and rotting; pad-lockable doors (lock not included)",
+        "Black / Peppercorn · 5 Year Limited Warranty · Made in USA"
+      ],
+      "link": "https://suncast.com/home-storage/storage-systems/cabinet-systems.html",
+      "linkLabel": "View cabinet systems",
+      "links": [
+        ["Tall Storage Cabinet BMC7210", "https://suncast.com/diamond-door-tall-storage-cabinet-bmc7210.html"],
+        ["Wall Storage Cabinet BMC3010", "https://suncast.com/diamond-door-wall-storage-cabinet-bmc3010.html"],
+        ["Single Drawer Base Cabinet BMC3611", "https://suncast.com/diamond-door-single-drawer-base-cabinet-bmc3611.html"],
+        ["Base Storage Cabinet BMC3610", "https://suncast.com/diamond-door-base-storage-cabinet-bmc3610.html"],
+        ["Tall Storage Locker BMC5810", "https://suncast.com/diamond-door-tall-storage-locker-bmc5810.html"]
+      ],
+      "focus": [45, 50],
+      "track": "auto",
+      "hotspotLabel": "Diamond-textured doors, mid-hinge"
+    },
+    {
+      "id": "05-trash",
+      "index": 5,
+      "footage": "placeholder",
+      "kicker": "Patio",
+      "name": "Single Trash Stow-Away®",
+      "model": "BMS4000PB",
+      "benefit": "One 96-gallon bin, out of sight, with a lift-up lid and a front door.",
+      "features": [
+        "Sized to conceal one 96-gallon trash bin — 34 cu. ft.",
+        "Front access door plus a lift-up lid; gas shocks allow one-handed opening and slow the close",
+        "Low-profile design fits along a house or fence; units connect side by side",
+        "Multi-wall resin panels; water resistant with UV protection",
+        "Includes one shelf (30 lb. evenly distributed)",
+        "Exterior 35.5 in. W × 42.5 in. D × 51.25 in. H; door opening 30.2 in. W × 45.5 in. H",
+        "Peppercorn · 10 Year Limited Warranty · Made in USA"
+      ],
+      "link": "https://suncast.com/single-trash-stow-away-bms4000pb.html",
+      "linkLabel": "View on suncast.com",
+      "focus": [50, 55],
+      "track": "auto",
+      "hotspotLabel": "Lift-up lid and front door"
+    }
+  ]
+}

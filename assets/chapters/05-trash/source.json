@@ -1,0 +1,23 @@
+{
+ "clip": "suncast_05_trash.mp4",
+ "frames": 201,
+ "fps": 20.0,
+ "probe": {
+  "programs": [],
+  "streams": [
+   {
+    "r_frame_rate": "0/0",
+    "nb_frames": "434"
+   },
+   {
+    "width": 1924,
+    "height": 1076,
+    "r_frame_rate": "24/1",
+    "nb_frames": "241"
+   }
+  ],
+  "format": {
+   "duration": "10.041667"
+  }
+ }
+}
